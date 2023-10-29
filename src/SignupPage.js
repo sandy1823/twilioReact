@@ -28,7 +28,7 @@ const SignupPage = () => {
       "mobileNumber": mobileNumber
     }
     // history('/OtpChecker',{data)
-    let getData = await axios.post('http://localhost:4000/loginRoute/signUp', data).then((res) => res).catch((err) => {
+    let getData = await axios.post('https://backend-8ezm.onrender.com/loginRoute/signUp', data).then((res) => res).catch((err) => {
       console.log("err", err);
     })
     console.log("getData ***", getData);

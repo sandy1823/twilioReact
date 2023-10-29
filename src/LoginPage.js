@@ -22,7 +22,7 @@ const LoginPage = () => {
       password: password
     }
     let getData;
-    await axios.post('http://localhost:4000/loginRoute/login', data).then((res) => {
+    await axios.post('https://backend-8ezm.onrender.com/loginRoute/login', data).then((res) => {
 
       getData = res
     }).catch((err) => {
